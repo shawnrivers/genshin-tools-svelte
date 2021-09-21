@@ -28,7 +28,7 @@
 	</div>
 	<button
 		aria-label="close"
-		class="absolute z-10 right-0 top-0 p-1 bg-gray-400 bg-opacity-40 rounded-full transform -translate-y-1/3 translate-x-1/3"
+		class="absolute z-10 right-0 top-0 p-1 bg-gray-400 bg-opacity-40 rounded-full transform -translate-y-1/3 translate-x-1/3 hover:bg-gray-400 transition-colors"
 		on:click={handleClose}
 	>
 		<img src="/x.svg" alt="close" class="w-4 h-4 text-gray-600" />
