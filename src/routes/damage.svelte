@@ -20,8 +20,7 @@
 <div>
 	<h1 class="text-gray-800 text-4xl font-bold uppercase">Damage Expectation</h1>
 	{#each damageCards as damageCard (damageCard)}
-		<DamageCard />
-		<!-- <button on:click={() => removeCard(damageCard)}>Remove</button> -->
+		<DamageCard on:close={() => removeCard(damageCard)} />
 	{/each}
 	<div class="text-center">
 		<button class="mt-4 p-2 bg-gray-200 rounded-full" aria-label="add" on:click={addCard}
