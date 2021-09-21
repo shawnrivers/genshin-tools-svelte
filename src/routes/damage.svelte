@@ -17,12 +17,15 @@
 	<title>Damage Expectation - Genshin Tools</title>
 </svelte:head>
 
-<h1>Damage Expectation</h1>
-{#each damageCards as damageCard (damageCard)}
-	<DamageCard />
-	<button on:click={() => removeCard(damageCard)}>Remove</button>
-{/each}
-
 <div>
-	<button on:click={addCard}>Add</button>
+	<h1 class="text-gray-800 text-4xl font-bold uppercase">Damage Expectation</h1>
+	{#each damageCards as damageCard (damageCard)}
+		<DamageCard />
+		<!-- <button on:click={() => removeCard(damageCard)}>Remove</button> -->
+	{/each}
+	<div class="text-center">
+		<button class="mt-4 p-2 bg-gray-200 rounded-full" aria-label="add" on:click={addCard}
+			><img src="/plus.svg" alt="add" class="w-8 h-8 text-gray-600" />
+		</button>
+	</div>
 </div>
