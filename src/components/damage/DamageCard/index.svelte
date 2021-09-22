@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div class="relative mt-6 p-4 bg-gray-100 rounded-lg">
+<div class="relative p-4 bg-gray-100 rounded-lg">
 	<div class="flex flex-col space-y-4">
 		<Input label="Base Damage" bind:value={baseDamage} />
 		<Input label="Critical Rate (%)" bind:value={critRate} />
