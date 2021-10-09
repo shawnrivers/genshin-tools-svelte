@@ -8,7 +8,7 @@
 	let damageCards: string[] = [generateId()];
 
 	function addCard() {
-		damageCards = [...damageCards, generateId()];
+		damageCards = [generateId(), ...damageCards];
 	}
 
 	function removeCard(id: string) {
