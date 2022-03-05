@@ -86,11 +86,11 @@
 <section>
 	<h2 class="text-3xl font-semibold capitalize">{type} language</h2>
 	<div
-		class={`mt-2 flex flex-wrap justify-center ${
+		class={`mt-3 flex flex-wrap justify-center ${
 			type === 'teyvat' ? 'font-teyvat' : 'font-khaenriah'
 		}`}>
 		{#each characters as character (character)}
-			<Button class="m-0.5 text-3xl" on:click={() => addToInput(character)}>
+			<Button class="m-0.5 w-16 h-16 text-4xl" on:click={() => addToInput(character)}>
 				{character}
 			</Button>
 		{/each}
