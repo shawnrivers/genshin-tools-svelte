@@ -24,7 +24,7 @@
 	<h1 class="text-4xl font-bold uppercase">Damage Expectation</h1>
 	<div class="text-center">
 		<button
-			class="mt-4 rounded-full bg-gray-200 p-2 transition-colors hover:bg-gray-400"
+			class="mt-4 rounded-full bg-zinc-200 p-2 transition-colors hover:bg-zinc-400"
 			aria-label="add"
 			on:click={addCard}>
 			<img src="/plus.svg" alt="add" class="h-8 w-8 text-gray-600" />
