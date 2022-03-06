@@ -1,49 +1,5 @@
 <script lang="ts">
 	import CharactersPicker from '$components/language/CharactersPicker/index.svelte';
-
-	const teyvatCharacters = [
-		'a',
-		'b',
-		'c',
-		'd',
-		'e',
-		'f',
-		'g',
-		'h',
-		'i',
-		'j',
-		'k',
-		'l',
-		'm',
-		'n',
-		'o',
-		'p',
-		'q',
-		'r',
-		's',
-		't',
-		'u',
-		'v',
-		'w',
-		'x',
-		'y',
-		'z'
-	];
-
-	let teyvatInput: string[] = [];
-	function addToInput(character: string) {
-		const newInput = [...teyvatInput];
-		newInput.push(character);
-		teyvatInput = newInput;
-	}
-	function deleteOneCharacter() {
-		const newInput = [...teyvatInput];
-		newInput.pop();
-		teyvatInput = newInput;
-	}
-	function clearInput() {
-		teyvatInput = [];
-	}
 </script>
 
 <svelte:head>
